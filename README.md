@@ -4,7 +4,21 @@ This project is a simple Systematic Investment Plan (SIP) calculator built using
 It helps users estimate the future value of their monthly investments, with an option to adjust the returns for inflation, and visualizes the results year by year.
 
 ---
+## Screenshots
 
+Below are some screenshots of the calculator in action:
+
+![SIP Calculator - Main Screen](https://github.com/Deeprawat001/SIP_Calculator/blob/d7b738a9f670eca23993abe9ed06d0b27bd0ea0b/0408.png)  
+*Main input screen*
+
+![SIP Calculator - Chart View](https://github.com/Deeprawat001/SIP_Calculator/blob/d7b738a9f670eca23993abe9ed06d0b27bd0ea0b/04082.png
+)  
+*Line chart showing nominal and inflation-adjusted values*
+
+![SIP Calculator - Breakdown Table](https://github.com/Deeprawat001/SIP_Calculator/blob/d7b738a9f670eca23993abe9ed06d0b27bd0ea0b/04083.png)  
+*Year-by-year breakdown table*
+
+---
 ## Features
 
 - Calculates the future value of a monthly SIP based on user inputs
@@ -52,14 +66,14 @@ FV_real = FV / (1 + inflation_rate) ^ years<br>
 5. A breakdown table below the chart shows year-wise details.
 
 ---
-
 ## Project Structure
-your-project/
+```
+sip-calculator/
 ├── index.html
 ├── style.css
 ├── script.js
-├── README.md
-
+└── README.md
+```
 ---
 
 ## Running the Project
