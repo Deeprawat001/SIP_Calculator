@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>SIP Calculater</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <h1>SIP Calculater</h1>
+
+    <div class="main-content">
+      <!-- Left Side: Inputs + Button -->
+      <div class="left-column">
+        <div class="input-group">
+          <label>Monthly Investment (₹)</label>
+          <input type="range" id="monthlySlider" min="1000" max="200000" value="20000">
+          <input type="number" id="monthlyInput" min="1000" max="200000" value="20000">
+        </div>
+
+        <div class="input-group">
+          <label>Investment Duration (Years)</label>
+          <input type="range" id="yearSlider" min="1" max="40" value="10">
+          <input type="number" id="yearInput" min="1" max="40" value="10">
+        </div>
+
+        <div class="input-group">
+          <label>Expected Annual Return (%)</label>
+          <input type="range" id="rateSlider" min="1" max="25" value="12">
+          <input type="number" id="rateInput" min="1" max="25" value="12">
+        </div>
+
+        <div class="input-group">
+          <label>Expected Inflation Rate (%)</label>
+          <input type="range" id="inflationSlider" min="0" max="10" value="5">
+          <input type="number" id="inflationInput" min="0" max="10" value="5">
+        </div>
+
+        <button id="calculateBtn">Calculate</button>
+      </div>
+
+      <!-- Right Side: Result Summary -->
+      <div class="right-column">
+        <div class="result-summary">
+          <h3> Result Summary</h3>
+          <p id="resultSummary">Your results will appear here...</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Chart -->
+    <div class="chart-container">
+      <canvas id="sipChart"></canvas>
+    </div>
+
+    <!-- Amortization Table -->
+    <div class="table-container">
+      <h3>📊 Amortization Table</h3>
+      <table id="breakdownTable">
+        <thead>
+          <tr>
+            <th>Year</th>
+            <th>Total Invested (₹)</th>
+            <th>Interest Earned (₹)</th>
+            <th>Nominal Value (₹)</th>
+            <th>Real Value (₹)</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
