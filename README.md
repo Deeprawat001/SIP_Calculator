@@ -7,18 +7,18 @@ It helps users estimate the future value of their monthly investments, with an o
 ## Screenshots
 
 Below are some screenshots of the calculator in action:<br>
-*Main input screen*
+**Main input screen**
 ![SIP Calculator - Main Screen](https://github.com/Deeprawat001/SIP_Calculator/blob/d7b738a9f670eca23993abe9ed06d0b27bd0ea0b/0408.png)  
 
 
 
-*Line chart showing nominal and inflation-adjusted values*
+**Line chart showing nominal and inflation-adjusted values**
 ![SIP Calculator - Chart View](https://github.com/Deeprawat001/SIP_Calculator/blob/d7b738a9f670eca23993abe9ed06d0b27bd0ea0b/04082.png
 )  
 
 
 
-*Year-by-year breakdown table*
+**Year-by-year breakdown table**
 ![SIP Calculator - Breakdown Table](https://github.com/Deeprawat001/SIP_Calculator/blob/d7b738a9f670eca23993abe9ed06d0b27bd0ea0b/04083.png)  
 
 
